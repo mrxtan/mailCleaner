@@ -1,0 +1,30 @@
+# Dependencies and coverage
+node_modules/
+coverage/
+
+# Secrets and local OAuth tokens
+.env
+.env.*
+!.env.example
+credentials*.json
+client_secret*.json
+token*.json
+*.pem
+*.key
+
+# Logs and local tooling
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Interrupted atomic token writes
+*.tmp
+
+# Local job database and SQLite sidecars
+*.sqlite*
+*.db
+*.db-*
+
+# Personal sender rules
+senders.txt

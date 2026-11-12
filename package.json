@@ -1,0 +1,23 @@
+{
+  "name": "mail-cleaner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check queue.js && node --check lib/auth.js && node --check lib/config.js && node --check lib/jobs.js && node --check lib/storage.js && node --check lib/sender.js && node --check lib/discover.js && node --check dashboard.js && node --check lib/dashboard-data.js && node --check web/app.js",
+    "test": "node --test",
+    "ui": "node dashboard.js"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "better-sqlite3": "^11.10.0",
+    "dotenv": "^18.0.10",
+    "googleapis": "^178.0.0",
+    "nodemailer": "^10.5.0",
+    "proper-lockfile": "^4.1.2"
+  }
+}

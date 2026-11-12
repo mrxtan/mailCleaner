@@ -1,0 +1,3 @@
+# Copy to senders.txt and add your sender rules
+newsletter@example.com
+*@example.com
